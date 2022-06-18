@@ -1,0 +1,6 @@
+*           text=auto eol=lf
+*.yml       text
+Dockerfile  text
+*.sql       text
+*.sh        text
+*.md        text
