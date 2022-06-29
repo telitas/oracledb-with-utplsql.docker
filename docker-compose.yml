@@ -12,6 +12,7 @@ services:
         oracledb_repository: ${ORACLEDB_REPOSITORY:-oracle/database}
         oracledb_tag: ${ORACLEDB_TAG:?required}
         utplsql_version: ${UTPLSQL_VERSION:-latest}
+        utplsql_cli_version: ${UTPLSQL_CLI_VERSION:-latest}
     ports:
       - 1521:1521
     volumes:

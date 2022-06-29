@@ -16,13 +16,15 @@ First, build image
 docker build . --tag oracledb-with-utplsql:latest \
     --build-arg oracledb_repository=oracle/database \
     --build-arg oracledb_tag=21.3.0-se2 \
-    --build-arg utplsql_version=latest
+    --build-arg utplsql_version=latest \
+    --build-arg utplsql_cli_version=latest
 ```
 
 ```sh
 export ORACLEDB_REPOSITORY=oracle/database
 export ORACLEDB_TAG=21.3.0-se2
 export UTPLSQL_VERSION=latest
+export UTPLSQL_CLI_VERSION=latest
 
 docker compose build
 ```
