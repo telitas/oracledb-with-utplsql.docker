@@ -3,4 +3,4 @@
 # See the LICENSE.txt file or https://creativecommons.org/publicdomain/zero/1.0/ for details.
 
 export SQLPATH=/home/oracle/utPLSQL/source
-sqlplus "sys/${ORACLE_PWD}@localhost:1521/ORCLPDB1" as SYSDBA @"${SQLPATH}/install_headless.sql"
+sqlplus -L -S "sys/${ORACLE_PWD}@localhost:1521/ORCLPDB1" as SYSDBA @"${SQLPATH}/install_headless.sql"
